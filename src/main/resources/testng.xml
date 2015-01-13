@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="OnlinerSuite" configfailurepolicy="continue">
+    <test name="Onliner_Test_Classes">
+        <classes>
+            <class name="by.onliner.test.NotebookSearch"/>
+        </classes>
+    </test>
+</suite>
