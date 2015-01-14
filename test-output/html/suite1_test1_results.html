@@ -12,15 +12,13 @@
 <body>
 <h1>Onliner_Test_Classes</h1>
 <p>
-  Test duration: 53.219s
+  Test duration: 34.135s
 </p>
 
 
 
-
-
   <table class="resultsTable">
-    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
           <tr>
         <td colspan="3" class="group">by.onliner.test.NotebookSearch</td>
       </tr>
@@ -30,16 +28,125 @@
                   notebookSearch
       </td>
   <td class="duration">
-    53.135s
+    34.109s
   </td>
   <td class="result">
         
     
         
 
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: Timed out after 5 seconds. Unable to locate the element<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;SOBOLEVSKYI7&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;<br/>
+Driver info: driver.version: unknown</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              ru.yandex.qatools.htmlelements.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:73)<br />
+              ru.yandex.qatools.htmlelements.loader.decorator.proxyhandlers.WebElementNamedProxyHandler.invoke(WebElementNamedProxyHandler.java:29)<br />
+              com.sun.proxy.$Proxy13.click(Unknown Source)<br />
+              by.onliner.page.CatalogPage.goToNotebooks(CatalogPage.java:18)<br />
+              by.onliner.test.NotebookSearch.notebookSearch(NotebookSearch.java:28)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:483)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:348)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:254)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+              org.testng.TestNG.run(TestNG.java:1057)<br />
+              by.onliner.Runner.run(Runner.java:70)<br />
+              by.onliner.Runner.main(Runner.java:27)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:483)<br />
+              com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;http://catalog.onliner.by/notebook/&apos;][2]&quot;}<br/>
+Command duration or timeout: 10.04 seconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;SOBOLEVSKYI7&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=34.0.5, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: a87ff7fb-b1b9-4838-9c7c-8e81ad844bc9</a><br />
+        <div class="stackTrace" id="exception-1">
+                      sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+                      sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+                      java.lang.reflect.Constructor.newInstance(Constructor.java:408)<br />
+                      org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
+                      org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)<br />
+                      org.openqa.selenium.By$ByXPath.findElement(By.java:357)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+                      ru.yandex.qatools.htmlelements.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:48)<br />
+                      ru.yandex.qatools.htmlelements.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:35)<br />
+                      ru.yandex.qatools.htmlelements.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:126)<br />
+                      org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:69)<br />
+                      ru.yandex.qatools.htmlelements.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:71)<br />
+                      ru.yandex.qatools.htmlelements.loader.decorator.proxyhandlers.WebElementNamedProxyHandler.invoke(WebElementNamedProxyHandler.java:29)<br />
+                      com.sun.proxy.$Proxy13.click(Unknown Source)<br />
+                      by.onliner.page.CatalogPage.goToNotebooks(CatalogPage.java:18)<br />
+                      by.onliner.test.NotebookSearch.notebookSearch(NotebookSearch.java:28)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:483)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+                      org.testng.TestRunner.run(TestRunner.java:617)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:348)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:254)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+                      org.testng.TestNG.run(TestNG.java:1057)<br />
+                      by.onliner.Runner.run(Runner.java:70)<br />
+                      by.onliner.Runner.main(Runner.java:27)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:483)<br />
+                      com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;http://catalog.onliner.by/notebook/&apos;][2]&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;SOBOLEVSKYI7&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-2">
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/IVANSO~1/AppData/Local/Temp/anonymous3137599521905915783webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:26)<br />
+                      &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/IVANSO~1/AppData/Local/Temp/anonymous3137599521905915783webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)<br />
+                  </div>
+          </div>
       </td>
 </tr>
       </table>
+
+
   
 </body>
 </html>
