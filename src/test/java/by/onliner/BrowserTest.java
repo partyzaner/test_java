@@ -16,6 +16,7 @@ public class BrowserTest {
     @Test
     public void browserTest() throws IOException{
         WebDriver driver = new FirefoxDriver();
+        driver.manage().window().maximize();
         driver.get("http://google.com");
         File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(scrFile, new File("fire-screenshot.png"));
@@ -24,6 +25,7 @@ public class BrowserTest {
     @Test
     public void browserChromeTest() throws IOException{
         WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.get("http://tut.by");
         File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(scrFile, new File("chrome-screenshot.png"));
