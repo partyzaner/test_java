@@ -17,7 +17,7 @@ public class BrowserTest {
     public void browserTest() throws IOException{
         WebDriver driver = new FirefoxDriver();
         driver.manage().window().maximize();
-        driver.get("http://google.com");
+        driver.get("http://onliner.by");
         File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(scrFile, new File("fire-screenshot.png"));
     }
