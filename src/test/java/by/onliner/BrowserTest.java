@@ -47,7 +47,8 @@ public class BrowserTest {
         WebDriver driver = new PhantomJSDriver();
         driver.manage().window().maximize();
         driver.get("http://google.com");
-        File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(scrFile, new File("phantom-screenshot.png"));
+        System.out.println(driver.getTitle());
+//        File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+//        FileUtils.copyFile(scrFile, new File("phantom-screenshot.png"));
     }
 }
