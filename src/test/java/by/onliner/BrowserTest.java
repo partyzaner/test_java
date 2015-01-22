@@ -6,6 +6,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.testng.annotations.Test;
 
 import java.io.File;
@@ -29,5 +31,23 @@ public class BrowserTest {
         driver.get("http://tut.by");
         File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(scrFile, new File("chrome-screenshot.png"));
+    }
+
+    @Test
+    public void htmlUnitTest() throws IOException {
+        WebDriver driver = new HtmlUnitDriver();
+        driver.manage().window().maximize();
+        driver.get("http://google.com");
+        File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(scrFile, new File("html-screenshot.png"));
+    }
+
+    @Test
+    public void phantomJSTest() throws IOException {
+        WebDriver driver = new PhantomJSDriver();
+        driver.manage().window().maximize();
+        driver.get("http://google.com");
+        File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(scrFile, new File("phantom-screenshot.png"));
     }
 }
