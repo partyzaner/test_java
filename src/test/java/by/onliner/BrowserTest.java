@@ -37,9 +37,10 @@ public class BrowserTest {
     public void htmlUnitTest() throws IOException {
         WebDriver driver = new HtmlUnitDriver();
         driver.manage().window().maximize();
-        driver.get("http://google.com");
-        File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(scrFile, new File("html-screenshot.png"));
+        driver.get("http://yandex.ru");
+        System.out.println(driver.getTitle());
+//        File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+//        FileUtils.copyFile(scrFile, new File("html-screenshot.png"));
     }
 
     @Test
