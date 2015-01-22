@@ -48,7 +48,7 @@ public class BrowserTest {
         driver.manage().window().maximize();
         driver.get("http://google.com");
         System.out.println(driver.getTitle());
-//        File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-//        FileUtils.copyFile(scrFile, new File("phantom-screenshot.png"));
+        File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(scrFile, new File("phantom-screenshot.png"));
     }
 }
